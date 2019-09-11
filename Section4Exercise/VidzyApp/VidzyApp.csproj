@@ -60,6 +60,10 @@
     <Compile Include="Migrations\201909111631241_AddedSeedForGenreTable.Designer.cs">
       <DependentUpon>201909111631241_AddedSeedForGenreTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909111641597_UpdateVideoTableToReferOnlyOneGenre.cs" />
+    <Compile Include="Migrations\201909111641597_UpdateVideoTableToReferOnlyOneGenre.Designer.cs">
+      <DependentUpon>201909111641597_UpdateVideoTableToReferOnlyOneGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\VidzyContext.cs" />
     <Compile Include="Program.cs" />
@@ -75,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909111631241_AddedSeedForGenreTable.resx">
       <DependentUpon>201909111631241_AddedSeedForGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909111641597_UpdateVideoTableToReferOnlyOneGenre.resx">
+      <DependentUpon>201909111641597_UpdateVideoTableToReferOnlyOneGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
