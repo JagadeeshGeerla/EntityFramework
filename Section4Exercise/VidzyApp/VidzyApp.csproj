@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Domain\Classification.cs" />
     <Compile Include="Core\Domain\Genre.cs" />
     <Compile Include="Core\Domain\Video.cs" />
     <Compile Include="Migrations\201909111624316_InitialModel.cs" />
@@ -63,6 +64,10 @@
     <Compile Include="Migrations\201909111641597_UpdateVideoTableToReferOnlyOneGenre.cs" />
     <Compile Include="Migrations\201909111641597_UpdateVideoTableToReferOnlyOneGenre.Designer.cs">
       <DependentUpon>201909111641597_UpdateVideoTableToReferOnlyOneGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909111658213_AddedClassificationToVideoTable.cs" />
+    <Compile Include="Migrations\201909111658213_AddedClassificationToVideoTable.Designer.cs">
+      <DependentUpon>201909111658213_AddedClassificationToVideoTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\VidzyContext.cs" />
@@ -82,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909111641597_UpdateVideoTableToReferOnlyOneGenre.resx">
       <DependentUpon>201909111641597_UpdateVideoTableToReferOnlyOneGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909111658213_AddedClassificationToVideoTable.resx">
+      <DependentUpon>201909111658213_AddedClassificationToVideoTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

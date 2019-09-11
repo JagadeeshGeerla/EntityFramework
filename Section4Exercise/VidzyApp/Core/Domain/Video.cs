@@ -13,5 +13,7 @@ namespace VidzyApp.Core.Domain
         public DateTime? ReleaseDate { get; set; }
 
         public Genre Genre { get; set; }
+
+        public Classification Classification { get; set; }
     }
 }

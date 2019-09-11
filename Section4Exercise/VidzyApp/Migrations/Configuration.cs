@@ -20,11 +20,6 @@ namespace VidzyApp.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
 
-            context.Genres.AddOrUpdate(g => g.Name, new Genre[] {
-                new Genre {Id=1, Name = "Pop" },
-                new Genre {Id=2, Name = "Blues" },
-                new Genre {Id=3, Name = "Rock" }
-            });
         }
     }
 }
